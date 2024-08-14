@@ -1,0 +1,12 @@
+diff --git a/node_modules/expo-router/entry.js b/node_modules/expo-router/entry.js
+index d079ba7..0b2354a 100644
+--- a/node_modules/expo-router/entry.js
++++ b/node_modules/expo-router/entry.js
+@@ -4,6 +4,7 @@ import '@expo/metro-runtime';
+ 
+ import { App } from 'expo-router/build/qualified-entry';
+ import { renderRootComponent } from 'expo-router/build/renderRootComponent';
++import "../../utils/responsive-layout";
+ 
+ // This file should only import and register the root. No components or exports
+ // should be added here.

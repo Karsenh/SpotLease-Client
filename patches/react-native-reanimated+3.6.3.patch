@@ -1,0 +1,16 @@
+diff --git a/node_modules/react-native-reanimated/src/createAnimatedComponent/createAnimatedComponent.tsx b/node_modules/react-native-reanimated/src/createAnimatedComponent/createAnimatedComponent.tsx
+index 7152327..e8a381e 100644
+--- a/node_modules/react-native-reanimated/src/createAnimatedComponent/createAnimatedComponent.tsx
++++ b/node_modules/react-native-reanimated/src/createAnimatedComponent/createAnimatedComponent.tsx
+@@ -539,9 +539,9 @@ export function createAnimatedComponent(
+     // and later on, in componentDidUpdate, calculate translation for layout transition.
+     getSnapshotBeforeUpdate() {
+       if (
+-        (this._component as HTMLElement).getBoundingClientRect !== undefined
++        (this._component as HTMLElement)?.getBoundingClientRect !== undefined
+       ) {
+-        return (this._component as HTMLElement).getBoundingClientRect();
++        return (this._component as HTMLElement)?.getBoundingClientRect();
+       }
+ 
+       return null;
